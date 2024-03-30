@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import PokemonCard from "@/src/components/cardPokemon";
 import Image from "next/image";
-import Eevee from "@/src/components/eeveeIcon";
 
 export default function Pokemon() {
   const [pokemons, setPokemons] = useState([]);
@@ -36,9 +35,26 @@ export default function Pokemon() {
           />
         </div>
         <div className="flex justify-center items-center align-middle font-semibold hover:translate-y-2  ">
-          <Eevee />
+          <div className="size-9">
+            <Image
+              src={"https://cdn-icons-png.flaticon.com/512/188/188993.png "}
+              alt="iconEevee"
+              width={36}
+              height={36}
+            />
+          </div>
           <p className="text-xl ">Click ♥ Tap tu favorito</p>
-          <Eevee />
+          <div className="size-9">
+            <Image
+              src={
+                "https://cdn-icons-png.flaticon.com/512/188/188993.png " ||
+                "https://cdn-icons-png.flaticon.com/512/188/188995.png "
+              }
+              alt="iconEevee"
+              width={36}
+              height={36}
+            />
+          </div>
         </div>
       </div>
 

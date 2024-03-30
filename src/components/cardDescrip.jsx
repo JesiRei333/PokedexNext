@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Eevee from "./eeveeIcon";
 export default function CardDescrip(props) {
   const [pokemon, setPokemon] = useState({});
 
@@ -22,8 +21,9 @@ export default function CardDescrip(props) {
   }
   return (
     <div className="  hover:shadow-xl  hover:shadow-rose-900/80  text-white text-xl flex flex-col items-center justify-center text-center min-w-[550px] md:min-w-[750px] rounded-lg">
-      {!pokemon.sprites && <p> cargando </p>}
-      <Eevee />
+      {!pokemon.sprites.other["official-artwork"].front_default && (
+        <p> cargando </p>
+      )}
       <div className="flex flex-col items-center font-extrabold  text-whitetext-3xl ">
         <p className="">
           {pokemon.id} {"° "} {props.name.toUpperCase()}
@@ -32,7 +32,7 @@ export default function CardDescrip(props) {
 
       <div className="hover:translate-x-3 hover:translate-y-3  ">
         <Image
-          className="size-9 md:size-32"
+          className=""
           src={pokemon.sprites?.other["official-artwork"].front_default}
           alt={pokemon.name}
           width={450}
@@ -44,7 +44,7 @@ export default function CardDescrip(props) {
         className="flex flex-row bg-contain   min-h-full justify-self-auto min-w-[600px] text-white 
             align-middle  text-center text-base
           bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]
-          hover:translate-x-1 hover:translate-y-1  hover:shadow-2xl  hover:shadow-cyan-400/40 gap-1 "
+          hover:translate-x-1 hover:translate-y-1  hover:shadow-2xl  hover:shadow-cyan-400/40 gap-1 rounded"
       >
         <div className="flex flex-col gap-1 rounded-md">
           <p className="sm:gap-0  font-extrabold md:gap-1">Tipo:</p>

@@ -4,7 +4,6 @@ import Image from "next/image";
 
 export default function PokeGatcha() {
   const [pokemon, setPokemon] = useState({});
-  const [countPokemon, setCountPokemon] = useState();
 
   const numRandom = (min, max) => {
     var random = Math.floor(Math.random() * (max - min) + min);
@@ -12,19 +11,7 @@ export default function PokeGatcha() {
   };
 
   useEffect(() => {
-    fetch("https://pokeapi.co/api/v2/pokemon")
-      .then((response) => response.json())
-      .then((json) => {
-        const count = json.count;
-        setCountPokemon(count);
-      })
-      .catch((error) => {
-        console.log("Error", error);
-      });
-  }, []);
-
-  useEffect(() => {
-    fetch(`https://pokeapi.co/api/v2/pokemon/${numRandom(1, countPokemon)}`)
+    fetch(`https://pokeapi.co/api/v2/pokemon/${numRandom(1, 200)}`)
       .then((response) => response.json())
       .then((json) => {
         setPokemon(json);
@@ -32,7 +19,7 @@ export default function PokeGatcha() {
       .catch((error) => {
         console.log("Error", error);
       });
-  }, [countPokemon]);
+  }, []);
 
   if (!pokemon.sprites) {
     return (

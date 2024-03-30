@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { Inter, Lilita_One } from "next/font/google";
-import Eevee from "@/src/components/eeveeIcon";
 import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -24,9 +23,23 @@ export default function Home() {
             />
           </div>
           <div className="flex justify-center items-center align-middle font-semibold hover:translate-y-2  ">
-            <Eevee />
+            <div className="size-9">
+              <Image
+                src={"https://cdn-icons-png.flaticon.com/512/188/188993.png "}
+                alt="iconEevee"
+                width={36}
+                height={36}
+              />
+            </div>
             <p className="text-xl text-white ">Click ♥ Tap para comezar</p>
-            <Eevee />
+            <div className="size-9">
+              <Image
+                src={"https://cdn-icons-png.flaticon.com/512/188/188993.png "}
+                alt="iconEevee"
+                width={36}
+                height={36}
+              />
+            </div>
           </div>
         </div>
       </Link>
