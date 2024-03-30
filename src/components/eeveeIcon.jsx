@@ -5,8 +5,8 @@ export default function Eevee() {
     <div className="size-9">
       <Image
         src={
-          "https://cdn-icons-png.flaticon.com/512/188/188995.png " ||
-          "https://cdn-icons-png.flaticon.com/512/188/188993.png "
+          "https://cdn-icons-png.flaticon.com/512/188/188993.png " ||
+          "https://cdn-icons-png.flaticon.com/512/188/188995.png "
         }
         alt="iconEevee"
         width={36}
