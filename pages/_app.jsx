@@ -19,7 +19,8 @@ export default function App({ Component, pageProps }) {
         <Link className=" pl-1 " href="/pokedex">
           <BotonNav
             srcName={
-              "https://cdn-icons-png.flaticon.com/512/287/287221.png " || "♥"
+              "https://cdn-icons-png.flaticon.com/512/287/287221.png " ||
+              "https://cdn-icons-png.flaticon.com/512/528/528101.png "
             }
             altName={"pokebolaRed"}
             textoBoton={"Pokédex"}
