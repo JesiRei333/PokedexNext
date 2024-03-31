@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')] bg-contain bg-right-bottom  bg-repeat min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
     >
       <Link href="/pokedex">
         <div className="flex flex-col items-center pt-10">

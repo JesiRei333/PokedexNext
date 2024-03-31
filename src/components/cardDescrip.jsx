@@ -24,7 +24,7 @@ export default function CardDescrip(props) {
       {!pokemon.sprites.other["official-artwork"].front_default && (
         <p> cargando </p>
       )}
-      <div className="flex flex-col items-center font-extrabold  text-whitetext-3xl ">
+      <div className="flex flex-col items-center font-extrabold   ">
         <p className="">
           {pokemon.id} {"° "} {props.name.toUpperCase()}
         </p>
@@ -42,14 +42,16 @@ export default function CardDescrip(props) {
 
       <div
         className="flex flex-row bg-contain   min-h-full justify-self-auto min-w-[600px] text-white 
-            align-middle  text-center text-base
+            align-middle  text-center
           bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]
           hover:translate-x-1 hover:translate-y-1  hover:shadow-2xl  hover:shadow-cyan-400/40 gap-1 rounded"
       >
         <div className="flex flex-col gap-1 rounded-md">
-          <p className="sm:gap-0  font-extrabold md:gap-1">Tipo:</p>
+          <p className="sm:gap-0  font-extrabold md:gap-1 text-xs md:text-xl ">
+            Tipo:
+          </p>
 
-          <ul>
+          <ul className="">
             <li>{pokemon.types[0]?.type?.name}</li>
             <li>{pokemon.types[1]?.type?.name}</li>
             <li>{pokemon.types[2]?.type?.name}</li>
