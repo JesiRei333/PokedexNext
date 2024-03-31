@@ -22,8 +22,8 @@ export default function Home() {
               height={70}
             />
           </div>
-          <div className="flex justify-center items-center align-middle font-semibold hover:translate-y-2  ">
-            <p className="text-xl text-white ">Click ♥ Tap para comezar</p>
+          <div className="flex justify-center items-center align-middle font-semibold hover:translate-y-2 p-2  ">
+            <p className="text-lg text-white ">Click ♥ Tap para comezar</p>
           </div>
         </div>
       </Link>
