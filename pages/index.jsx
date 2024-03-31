@@ -11,19 +11,21 @@ export default function Home() {
     >
       <Link href="/pokedex">
         <div className="flex flex-col items-center pt-10">
-          <div className="w-full max-w-sm hover:translate-y-2 pt-9 ">
+          <div className="w-full max-w-md hover:translate-y-2 pt-9 ">
             <Image
               src={
                 "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png" ||
                 "♥"
               }
               alt="pokemonLogo"
-              width={600}
+              width={700}
               height={70}
             />
           </div>
           <div className="flex justify-center items-center align-middle font-semibold hover:translate-y-2 p-2  ">
-            <p className="text-lg text-white ">Click ♥ Tap para comezar</p>
+            <p className="flex text-wrap text-center sm:text-lg text-white ">
+              Click ♥ Tap para comezar
+            </p>
           </div>
         </div>
       </Link>
