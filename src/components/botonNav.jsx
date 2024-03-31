@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function BotonNav(props) {
   return (
     <div className="flex justify-center min-h-8 min-w-8 items-center hover:font-extrabold ">
-      <div className=" max-h-7 max-w-7  sm:min-h-8 sm:min-w-8 pl-1">
+      <div className=" max-h-8 max-w-8  min-h-8 min-w-8 pl-1">
         <Image
           src={props.srcName || "♥"}
           alt={props.altName || "♥"}
