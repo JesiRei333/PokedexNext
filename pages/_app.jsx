@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <main className="bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')] bg-opacity-80 bg-repeat-space bg-right-bottom ">
       <nav className=" fixed flex  flex-row sm:text-sm justify-center font-semibold w-full  bg-white/20 md:text-xl lg:justify-around lg:p-1.5 lg:pl-60 lg:pr-60 gap-1">
-        <Link className=" pl-1 " href="/">
+        <Link className=" hover:font-extrabold pl-1 min-h-8 min-w-8" href="/">
           <BotonNav
             srcName={
               "https://cdn-icons-png.flaticon.com/512/1408/1408856.png" || "♥"
@@ -16,14 +16,20 @@ export default function App({ Component, pageProps }) {
             textoBoton={"PokeHome"}
           />
         </Link>
-        <Link className=" pl-1 " href="/pokedex">
+        <Link
+          className=" hover:font-extrabold  pl-1 min-h-8 min-w-8"
+          href="/pokedex"
+        >
           <BotonNav
             srcName={"https://cdn-icons-png.flaticon.com/512/419/419467.png"}
             altName={"pokebola"}
             textoBoton={"Pokédex"}
           />
         </Link>
-        <Link className=" pl-1 " href="/pokeGancha">
+        <Link
+          className=" hover:font-extraboldpl-1 min-h-8 min-w-8 "
+          href="/pokeGancha"
+        >
           <BotonNav
             srcName={
               "https://cdn-icons-png.flaticon.com/512/188/188982.png" || "♥"
@@ -32,7 +38,10 @@ export default function App({ Component, pageProps }) {
             textoBoton={"PokeGancha"}
           />
         </Link>
-        <Link className=" pl-1 " href="/pokeInicial">
+        <Link
+          className="hover:font-extrabold pl-1 min-h-8 min-w-8"
+          href="/pokeInicial"
+        >
           <BotonNav
             srcName={
               "https://cdn-icons-png.flaticon.com/512/362/362000.png" || "♥"
