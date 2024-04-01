@@ -30,7 +30,7 @@ export default function CardDescrip(props) {
         </p>
       </div>
 
-      <div className="hover:translate-x-3 hover:translate-y-3  ">
+      <div className=" translate-y-0 translate-x-0 md:hover:translate-x-2 md:hover:translate-y-2  ">
         <Image
           className=""
           src={pokemon.sprites?.other["official-artwork"].front_default}
@@ -44,7 +44,7 @@ export default function CardDescrip(props) {
         className="flex flex-row bg-contain  p-2  text-white rounded-md
             align-middle  text-center
           bg-[url('https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg')]
-          hover:translate-x-1 hover:translate-y-1  hover:shadow-2xl  hover:shadow-cyan-400/40 gap-1 rounded"
+          translate-y-0 translate-x-0 md:hover:translate-x-2 md:hover:translate-y-2  hover:shadow-2xl  hover:shadow-cyan-400/40 gap-1 "
       >
         <div className="flex flex-col gap-1  text-xs md:text-xl">
           <p className="sm:gap-0  font-extrabold md:gap-1  ">Tipo:</p>
