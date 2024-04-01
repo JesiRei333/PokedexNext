@@ -7,10 +7,11 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
+body {
+  background-color: black;
+}
 .body {
   background-image: url("https://wallpapers-clan.com/wp-content/uploads/2022/05/pokemon-gengar-minimalist-wallpaper.jpg");
-  background-color: black;
 }
 
 #pokeCard {
