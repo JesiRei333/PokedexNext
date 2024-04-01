@@ -47,7 +47,9 @@ export default function PokemonInicial() {
           />
         </p>
       </div>
-      <CardDescrip name={pokemon.name} />
+      <div className="translate-y-0 translate-x-0 md:hover:translate-x-2 md:hover:translate-y-2 ">
+        <CardDescrip name={pokemon.name} />
+      </div>
     </main>
   );
 }
